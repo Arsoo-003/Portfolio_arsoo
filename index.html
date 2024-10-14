@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de ARSALANE Youssef - Développeur Web. Découvrez mes projets, dont un site de location de voitures, un site d'impression, et un site de chocolat."
+    />
+    <meta
+      name="keywords"
+      content="développeur web, portfolio, projets, ARSALANE Youssef, site web, site de location de voitures, site d'impression, site de chocolat"
+    />
+    <meta name="author" content="ARSALANE Youssef" />
+    <meta
+      property="og:title"
+      content="Portfolio de ARSALANE Youssef - Développeur Web"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez les projets de développement web de ARSALANE Youssef, comprenant un site de location de voitures, un site d'impression, et un site de chocolat."
+    />
+    <meta property="og:image" content="images/Profil.jpg" />
+    <meta property="og:url" content="https://votre-domaine.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Portfolio de ARSALANE Youssef - Développeur Web"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez les projets de développement web de ARSALANE Youssef."
+    />
+    <meta name="twitter:image" content="images/Profil.jpg" />
+    <title>Portfolio - ARSALANE Youssef</title>
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="images/test1.webp" as="image" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Loader pour améliorer l'expérience utilisateur pendant le chargement -->
+    <div id="loading-screen">
+      <div class="spinner"></div>
+      <p>Chargement...</p>
+    </div>
+
+    <header role="banner">
+      <div class="logo-container">
+        <a href="#home" aria-label="Retour à l'accueil">
+          <img
+            src="images/logo2.png"
+            alt="Logo de ARSALANE Youssef"
+            width="60"
+            height="auto"
+          />
+        </a>
+      </div>
+
+      <nav role="navigation" aria-label="Main Menu">
+        <ul class="menu">
+          <li>
+            <a href="#home" aria-label="Accueil" aria-current="page">Accueil</a>
+          </li>
+          <li><a href="#projects" aria-label="Mes projets">Projets</a></li>
+          <li><a href="#contact" aria-label="Contactez-moi">Contact</a></li>
+          <li><a href="#blog" aria-label="Blog et Actualités">Blog</a></li>
+          <li>
+            <a href="#skills" aria-label="Compétences Techniques"
+              >Compétences</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Barre de progression de lecture -->
+    <div id="progress-bar"></div>
+
+    <main role="main">
+      <section id="home" class="banner parallax" data-speed="0.5">
+        <div class="overlay">
+          <div class="profile-container">
+            <img
+              src="images/Profil.jpg"
+              srcset="
+                images/Profil-small.jpg   480w,
+                images/Profil-medium.jpg  800w,
+                images/Profil.jpg        1200w
+              "
+              sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
+              alt="Portrait de ARSALANE Youssef, Développeur Web"
+              class="profile-img"
+              width="120"
+              height="120"
+            />
+          </div>
+          <h1>BIENVENUE SUR CORTEX BYTE</h1>
+          <p>
+            Je suis ARSALANE Youssef, un développeur web passionné et créatif,
+            spécialisé dans la conception de solutions numériques sur mesure.
+            Avec une approche axée sur l'innovation et la performance, je
+            transforme les idées en projets web captivants et fonctionnels.
+            Parcourez mon portfolio pour découvrir comment j’allie expertise
+            technique et design élégant pour créer des expériences utilisateur
+            exceptionnelles.
+          </p>
+          <a href="#projects" class="btn-primary" aria-label="Voir mes projets"
+            >Voir mes projets</a
+          >
+        </div>
+      </section>
+
+      <section id="projects" class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Mes Projets</h2>
+        <div class="projects-grid">
+          <article aria-labelledby="project1-title">
+            <img
+              src="images/PRJ1.jpg"
+              srcset="
+                images/PRJ1-small.jpg   480w,
+                images/PRJ1-medium.jpg  800w,
+                images/PRJ1.jpg        1200w
+              "
+              sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
+              alt="Aperçu du site de location de voitures développé par ARSALANE Youssef"
+              width="300"
+              height="200"
+            />
+            <h3 id="project1-title">Site de Location de Voitures</h3>
+            <p>
+              Un site de réservation en ligne avec une interface utilisateur
+              intuitive et un système de gestion des réservations performant.
+            </p>
+            <a
+              href="project-car-rental.html"
+              class="btn-secondary"
+              aria-label="Voir le projet de location de voitures"
+              >Voir le projet</a
+            >
+          </article>
+          <article aria-labelledby="project2-title">
+            <img
+              src="images/PRJ2.jpg"
+              srcset="
+                images/PRJ2-small.jpg   480w,
+                images/PRJ2-medium.jpg  800w,
+                images/PRJ2.jpg        1200w
+              "
+              sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
+              alt="Aperçu du site d'impression développé par ARSALANE Youssef"
+              width="300"
+              height="200"
+            />
+            <h3 id="project2-title">Site d'Impression</h3>
+            <p>
+              Une plateforme de commande d'impressions en ligne avec des options
+              de personnalisation avancées.
+            </p>
+            <a
+              href="project-printing.html"
+              class="btn-secondary"
+              aria-label="Voir le projet d'impression"
+              >Voir le projet</a
+            >
+          </article>
+          <article aria-labelledby="project3-title">
+            <img
+              src="images/PRJ3.jpg"
+              srcset="
+                images/PRJ3-small.jpg   480w,
+                images/PRJ3-medium.jpg  800w,
+                images/PRJ3.jpg        1200w
+              "
+              sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
+              alt="Aperçu du site de chocolat développé par ARSALANE Youssef"
+              width="300"
+              height="200"
+            />
+            <h3 id="project3-title">Site de Chocolat</h3>
+            <p>
+              Un site e-commerce pour la vente de chocolat artisanal avec une
+              mise en page élégante et moderne.
+            </p>
+            <a
+              href="project-chocolate.html"
+              class="btn-secondary"
+              aria-label="Voir le projet de chocolat"
+              >Voir le projet</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contactez-Moi</h2>
+        <form
+          action="submit-form.php"
+          method="POST"
+          aria-labelledby="contact-form"
+          novalidate
+          onsubmit="return validateForm()"
+        >
+          <fieldset>
+            <legend id="contact-form">Formulaire de contact</legend>
+            <label for="name">Nom:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              aria-required="true"
+              aria-describedby="name-info"
+              placeholder="Votre nom"
+              pattern="[A-Za-z\s]+"
+              title="Le nom ne doit contenir que des lettres et des espaces."
+            />
+            <span
+              id="name-error"
+              class="error-message"
+              aria-live="polite"
+            ></span>
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+              aria-describedby="email-info"
+              placeholder="Votre adresse e-mail"
+              title="Veuillez entrer une adresse e-mail valide."
+            />
+            <span
+              id="email-error"
+              class="error-message"
+              aria-live="polite"
+            ></span>
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              aria-required="true"
+              aria-describedby="message-info"
+              placeholder="Votre message"
+              minlength="10"
+              title="Le message doit contenir au moins 10 caractères."
+            ></textarea>
+            <span
+              id="message-error"
+              class="error-message"
+              aria-live="polite"
+            ></span>
+
+            <button
+              type="submit"
+              class="btn-primary"
+              aria-label="Envoyer le message"
+            >
+              Envoyer
+            </button>
+            <p id="form-success" class="success-message" aria-live="polite"></p>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="blog" class="blog" aria-labelledby="blog-title">
+        <h2 id="blog-title">Blog et Actualités</h2>
+        <div class="blog-grid">
+          <article aria-labelledby="article1-title">
+            <img
+              src="images/Blog1.jpg"
+              srcset="
+                images/blog1-small.jpg   480w,
+                images/blog1-medium.jpg  800w,
+                images/blog1.jpg        1200w
+              "
+              sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
+              alt="Image d'article de blog"
+              width="300"
+              height="200"
+            />
+            <h3 id="article1-title">
+              Dernières Tendances en Développement Web 2024
+            </h3>
+            <p>
+              Découvrez les dernières tendances en matière de développement web
+              en 2024, y compris les nouvelles technologies, frameworks, et
+              meilleures pratiques...
+            </p>
+            <a
+              href="blog-article1.html"
+              class="btn-secondary"
+              aria-label="Lire l'article sur les tendances en développement web"
+              >Lire l'article</a
+            >
+            <!-- Boutons de partage social -->
+            <div class="social-share">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://twitter.com/intent/tweet?url=https://votre-domaine.com/blog-article1.html&text=Découvrez+les+dernières+tendances+en+développement+web+en+2024!"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Partager sur Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https://votre-domaine.com/blog-article1.html&title=Dernières+Tendances+en+Développement+Web&summary=Découvrez+les+dernières+tendances+en+développement+web+en+2024!"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Partager sur LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </article>
+          <article aria-labelledby="article2-title">
+            <img
+              src="images/Blog2.jpg"
+              srcset="
+                images/blog2-small.jpg   480w,
+                images/blog2-medium.jpg  800w,
+                images/blog2.jpg        1200w
+              "
+              sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
+              alt="Image d'article de blog"
+              width="300"
+              height="200"
+            />
+            <h3 id="article2-title">Comment Améliorer votre SEO en 2024</h3>
+            <p>
+              Optimisez le référencement de votre site avec ces stratégies
+              éprouvées pour 2024. Apprenez comment maximiser votre visibilité
+              en ligne...
+            </p>
+            <a
+              href="blog-article2.html"
+              class="btn-secondary"
+              aria-label="Lire l'article sur l'amélioration du SEO en 2024"
+              >Lire l'article</a
+            >
+            <!-- Boutons de partage social -->
+            <div class="social-share">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://twitter.com/intent/tweet?url=https://votre-domaine.com/blog-article1.html&text=Découvrez+les+dernières+tendances+en+développement+web+en+2024!"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Partager sur Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https://votre-domaine.com/blog-article1.html&title=Dernières+Tendances+en+Développement+Web&summary=Découvrez+les+dernières+tendances+en+développement+web+en+2024!"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Partager sur LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Compétences Techniques</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <p>Création de pages web structurées et sémantiques.</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <p>Conception de styles réactifs et animations.</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>Développement de fonctionnalités dynamiques pour le web.</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+            <p>Création d'applications web interactives et performantes.</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-node-js"></i>
+            <h3>Node.js</h3>
+            <p>Développement backend avec Express et gestion des APIs.</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <h3>MongoDB</h3>
+            <p>Gestion des bases de données NoSQL.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bouton de retour en haut -->
+    <button id="back-to-top" aria-label="Retour en haut">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer role="contentinfo">
+      <p>&copy; 2024 ARSALANE Youssef. Tous droits réservés.</p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Twitter"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.youtube.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="YouTube"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Inclusion du fichier JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>
